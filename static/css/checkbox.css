@@ -1,0 +1,19 @@
+.flg-checkbox-group {
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.flg-checkbox-group label {
+  cursor: pointer;
+}
+
+.gift-checkbox-group {
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.gift-checkbox-group label {
+  cursor: pointer;
+}
