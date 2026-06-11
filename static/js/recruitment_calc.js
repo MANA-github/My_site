@@ -50,8 +50,8 @@ function calc() {
         }
     });
 
-    if (flgData.doubleEvent) { totalPrice*=2; totalItems*=2;}
-    if (flgData.free) { totalItems+=30;}
+    if (flgData.doubleEvent) { totalPrice*=2; totalItems*=2; }
+    if (flgData.free) { totalItems+=30; }
 
     const ansElement = document.querySelector('.calc-ans p');
 
