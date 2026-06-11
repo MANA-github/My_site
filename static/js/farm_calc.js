@@ -45,7 +45,6 @@ function calc() {
             document.getElementById(char.starId).value
         );
 
-        // 0～30に補正
         if (isNaN(starCount) || starCount < 0) {
             starCount = 0;
         }
@@ -54,7 +53,6 @@ function calc() {
             starCount = 30;
         }
 
-        // 補正後の値を画面に反映
         document.getElementById(char.starId).value =
             starCount;
 
@@ -64,18 +62,11 @@ function calc() {
 
         const tableIndex = bookRank - 1;
 
-        // UR+ボーナス(+50%)
         const bonus =
             document.getElementById(char.urFlgId).checked
                 ? 0.5
                 : 0;
 
-        /*
-            ✩0  = +10% → 1.1倍
-            ✩30 = +100% → 2.0倍
-            UR+ = +50%
-            最大 = +150% → 2.5倍
-        */
         const multiplier =
             1.1 + starCount * 0.03 + bonus;
 
