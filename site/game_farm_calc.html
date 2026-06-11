@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/farm_calc.css">
+    <title>ありリベ 農場シミュレーター</title>
+</head>
+<body>
+
+    <h1>ありリベ 農場シミュレーター</h1>
+
+    <div class="input-space">
+
+        <div class="first-char">
+            <p>
+                1体目の✩の数
+                <input id="firstStar" type="number" min="1" max="30" value="30">
+            </p>
+
+            <div class="radio-btn">
+                <input type="radio" id="f_d" name="first" value="diamond" checked>
+                <label for="f_d">ダイヤ</label>
+
+                <input type="radio" id="f_m" name="first" value="core">
+                <label for="f_m">魔核</label>
+
+                <input type="radio" id="f_k" name="first" value="stone">
+                <label for="f_k">強化石</label>
+
+                <input type="radio" id="f_g" name="first" value="gold">
+                <label for="f_g">金貨</label>
+            </div>
+
+            <div class="book-rank">
+                <label for="bookStar_f">本のランク</label>
+                <select id="bookStar_f">
+                    <option value="1">✩1</option>
+                    <option value="2">✩2</option>
+                    <option value="3">✩3</option>
+                    <option value="4">✩4</option>
+                    <option value="5" selected>✩5</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="second-char">
+            <p>
+                2体目の✩の数
+                <input id="secondStar" type="number" min="1" max="30" value="30">
+            </p>
+
+            <div class="radio-btn">
+                <input type="radio" id="s_d" name="second" value="diamond" checked>
+                <label for="s_d">ダイヤ</label>
+
+                <input type="radio" id="s_m" name="second" value="core">
+                <label for="s_m">魔核</label>
+
+                <input type="radio" id="s_k" name="second" value="stone">
+                <label for="s_k">強化石</label>
+
+                <input type="radio" id="s_g" name="second" value="gold">
+                <label for="s_g">金貨</label>
+            </div>
+
+            <div class="book-rank">
+                <label for="bookStar_s">本のランク</label>
+                <select id="bookStar_s">
+                    <option value="1">✩1</option>
+                    <option value="2">✩2</option>
+                    <option value="3">✩3</option>
+                    <option value="4">✩4</option>
+                    <option value="5" selected>✩5</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="third-char">
+            <p>
+                3体目の✩の数
+                <input id="thirdStar" type="number" min="1" max="30" value="30">
+            </p>
+
+            <div class="radio-btn">
+                <input type="radio" id="t_d" name="third" value="diamond" checked>
+                <label for="t_d">ダイヤ</label>
+
+                <input type="radio" id="t_m" name="third" value="core">
+                <label for="t_m">魔核</label>
+
+                <input type="radio" id="t_k" name="third" value="stone">
+                <label for="t_k">強化石</label>
+
+                <input type="radio" id="t_g" name="third" value="gold">
+                <label for="t_g">金貨</label>
+            </div>
+
+            <div class="book-rank">
+                <label for="bookStar_t">本のランク</label>
+                <select id="bookStar_t">
+                    <option value="1">✩1</option>
+                    <option value="2">✩2</option>
+                    <option value="3">✩3</option>
+                    <option value="4">✩4</option>
+                    <option value="5" selected>✩5</option>
+                </select>
+            </div>
+        </div>
+
+    </div>
+
+    <button id="btn" onclick="calc()">計算</button>
+
+    <div class="result"></div>
+
+    <a href="/">トップページに戻る</a>
+
+    <script src="/static/js/farm_calc.js"></script>
+
+</body>
+</html>
